@@ -1,6 +1,7 @@
 goto menu
 
 :menu
+cls
 @echo off
 echo IT Tools
 echo Please select an option:
@@ -15,12 +16,15 @@ If /I "%Input%"=="4" goto option4
 
 :option1
 ipconfig
+pause
+goto menu
 
 :option3
 chkdsk
+pause
+goto menu
 
 :option4
 tasklist
-
 pause
 goto menu
